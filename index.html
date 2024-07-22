@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Peso</title>
+    <style>
+        body{
+            margin: 40px;
+        }
+        #material, .Chapa, .Redondo, .quadr, .botao{
+            font-size: 20px;
+        }
+        #respostas , #respostas_2{
+            width: 100%;
+            height: 500px;
+        }
+        .limpar{
+            font-size: 20px;
+        }
+        .chapa , .chapa_1, .Redondo_1{
+            font-size: 20px;
+            margin-right: 40px;
+        }
+        #chapa_1{
+            margin-left: 40px;
+        }
+        .limpar_2{
+            font-size: 20px;
+        }
+        #resposta_final, .limpar_2{
+            position: relative;
+            top: -35vh;
+            margin-left: 10vw;
+            font-size: 20px;
+        }
+        #opc_1, #chapa_1_1_2{
+            width: 3vw;
+            position: relative;
+        }
+        #chapa_1_1_2{
+            left: 1.95vw;
+        }
+        #opc_1{
+            font-size: 20px;
+            left: 2vw;
+        }
+
+    </style>
+</head>
+<body>
+
+<form>
+
+<select id="material">
+    <option value="" id="nd">Escolha uma das opções:</option>
+    <option value="chapa" id="chapa">Chapa</option>
+    <option value="redondo" id="redondo">Redondo</option>
+    <option value="quadrado" id="quadrado">Quadrado</option>
+
+</select>
+
+    <input type="button" value="Calcular" class="botao" id="calcular">
+    <input type="reset" value="Limpar" class="limpar">
+
+<main>
+    <div id="respostas">
+
+    </div>
+
+    <div id="respostas_2"></div>
+</main>
+
+</form>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="calculo.js"></script>
+
+</body>
+</html>
